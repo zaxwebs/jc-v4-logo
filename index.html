@@ -1,0 +1,872 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>Jaxcom V4 Logo Refresh</title><style id="dark-mode">
+:root {
+	color-scheme: dark;
+	--dark-canvas: #0c0e12;
+	--dark-text: #edf0f5;
+	--dark-muted: #a9b0bd;
+	--dark-border: rgba(255, 255, 255, 0.12);
+	--dark-accent: #8cbcff;
+}
+
+html,
+body {
+	background: var(--dark-canvas) !important;
+}
+
+body,
+p,
+li {
+	color: var(--dark-text) !important;
+}
+
+h1,
+h2,
+h3,
+strong {
+	color: #ffffff !important;
+}
+
+a,
+a.visited,
+.table_of_contents-link,
+.bookmark-href {
+	color: var(--dark-accent) !important;
+}
+
+hr,
+table,
+th,
+td,
+.tab,
+.source,
+.callout.block-color-default_background {
+	border-color: var(--dark-border) !important;
+}
+
+th,
+.bookmark-description,
+.pdf-relative-link-path {
+	color: var(--dark-muted) !important;
+}
+
+.simple-table-header-color {
+	background: #20242c !important;
+	color: #ffffff !important;
+}
+
+.selected-value,
+code,
+.code {
+	background: #1c2028 !important;
+	color: #f2a7b5 !important;
+}
+
+.code > code {
+	background: none !important;
+	color: inherit !important;
+}
+
+blockquote {
+	border-left-color: var(--dark-accent) !important;
+}
+
+figure.image {
+	text-align: left !important;
+}
+
+figure.image img {
+	display: block;
+	margin-left: 0 !important;
+	margin-right: auto !important;
+}
+
+@media only print {
+	@page {
+		size: 900px 5400px;
+		margin: 0;
+	}
+
+	html,
+	body {
+		width: 900px;
+		max-width: none !important;
+		margin: 0 !important;
+		background: var(--dark-canvas) !important;
+	}
+
+	article.page {
+		width: 900px;
+		max-width: none !important;
+		margin: 0 !important;
+	}
+}
+
+</style><style>
+/* cspell:disable-file */
+/* webkit printing magic: print all background colors */
+html {
+	-webkit-print-color-adjust: exact;
+}
+* {
+	box-sizing: border-box;
+	-webkit-print-color-adjust: exact;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+@media only screen {
+	body {
+		margin: 2em auto;
+		max-width: 900px;
+		color: rgb(55, 53, 47);
+	}
+}
+
+body {
+	line-height: 1.5;
+	white-space: pre-wrap;
+}
+
+a,
+a.visited {
+	color: inherit;
+	text-decoration: underline;
+}
+
+.pdf-relative-link-path {
+	font-size: 80%;
+	color: #444;
+}
+
+h1,
+h2,
+h3 {
+	letter-spacing: -0.01em;
+	line-height: 1.2;
+	font-weight: 600;
+	margin-bottom: 0;
+}
+
+/* Override strong tags inside headings to maintain consistent weight */
+h1 strong,
+h2 strong,
+h3 strong {
+	font-weight: 600;
+}
+
+.page-title {
+	font-size: 2.5rem;
+	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 0.75em;
+}
+
+h1 {
+	font-size: 1.875rem;
+	margin-top: 1.875rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+	margin-top: 1.5rem;
+}
+
+h3 {
+	font-size: 1.25rem;
+	margin-top: 1.25rem;
+}
+
+.source {
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	padding: 1.5em;
+	word-break: break-all;
+}
+
+.callout {
+	border-radius: 10px;
+	padding: 1rem;
+}
+
+/* For default-background callouts, render the border outline. */
+.callout.block-color-default_background {
+	border: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+figure,
+aside,
+details {
+	margin: 1.25em 0;
+	page-break-inside: avoid;
+}
+
+figcaption {
+	opacity: 0.5;
+	font-size: 85%;
+	margin-top: 0.5em;
+}
+
+mark {
+	background-color: transparent;
+}
+
+.indented {
+	padding-left: 1.5em;
+}
+
+hr {
+	background: transparent;
+	display: block;
+	width: 100%;
+	height: 1px;
+	visibility: visible;
+	border: none;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+img {
+	max-width: 100%;
+}
+
+@media only print {
+	img {
+		max-height: 100vh;
+		object-fit: contain;
+	}
+
+	table.collection-content {
+		width: 100%;
+		table-layout: fixed;
+	}
+
+	table.collection-content th,
+	table.collection-content td {
+		overflow-wrap: anywhere;
+	}
+
+	table.collection-content td > .user,
+	table.collection-content td > time {
+		white-space: pre-wrap;
+	}
+}
+
+@page {
+	margin: 1in;
+}
+
+.collection-content-wrapper {
+	overflow-x: auto;
+}
+
+@media only print {
+	.collection-content-wrapper {
+		overflow-x: visible;
+	}
+}
+
+.collection-content {
+	font-size: 0.875rem;
+}
+
+.collection-content td {
+	white-space: pre-wrap;
+	word-break: break-word;
+}
+
+.column-list {
+	display: flex;
+	gap: 46px;
+}
+
+.column {
+	min-width: 0;
+	overflow: hidden;
+}
+
+.column > *:first-child {
+	margin-top: 0;
+}
+
+.table_of_contents-item {
+	display: block;
+	font-size: 0.875rem;
+	line-height: 1.3;
+	padding-inline: 0.125rem;
+	padding-block: 0.375rem;
+}
+
+.table_of_contents-indent-1 {
+	margin-left: 1.5rem;
+}
+
+.table_of_contents-indent-2 {
+	margin-left: 3rem;
+}
+
+.table_of_contents-indent-3 {
+	margin-left: 4.5rem;
+}
+
+.table_of_contents-link {
+	text-decoration: none;
+	opacity: 0.7;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.18);
+}
+
+table,
+th,
+td {
+	border: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+table {
+	border-collapse: collapse;
+	border-left: none;
+	border-right: none;
+}
+
+th,
+td {
+	font-weight: normal;
+	padding: 0.25em 0.5em;
+	line-height: 1.5;
+	min-height: 1.5em;
+	text-align: left;
+}
+
+th {
+	color: rgba(55, 53, 47, 0.6);
+}
+
+ol,
+ul {
+	margin: 0;
+	margin-block-start: 0.6em;
+	margin-block-end: 0.6em;
+}
+
+li > ol:first-child,
+li > ul:first-child {
+	margin-block-start: 0.6em;
+}
+
+ul > li {
+	list-style: disc;
+}
+
+ul.to-do-list {
+	padding-inline-start: 0;
+}
+
+ul.to-do-list > li {
+	list-style: none;
+}
+
+.to-do-children-checked {
+	text-decoration: line-through;
+	opacity: 0.375;
+}
+
+ul.toggle > li {
+	list-style: none;
+}
+
+ul {
+	padding-inline-start: 1.7em;
+}
+
+ul > li {
+	padding-left: 0.1em;
+}
+
+ol {
+	padding-inline-start: 1.6em;
+}
+
+ol.numbered-list.numbered-list-digits-2 {
+	padding-inline-start: 2em;
+}
+
+ol.numbered-list.numbered-list-digits-3plus {
+	padding-inline-start: 2.4em;
+}
+
+ol > li {
+	padding-left: 0.2em;
+}
+
+.mono ol {
+	padding-inline-start: 2em;
+}
+
+.mono ol > li {
+	text-indent: -0.4em;
+}
+
+.toggle {
+	padding-inline-start: 0em;
+	list-style-type: none;
+}
+
+/* Indent toggle children */
+.toggle > li > details {
+	padding-left: 1.7em;
+}
+
+.toggle > li > details > summary {
+	margin-left: -1.1em;
+}
+
+.selected-value {
+	display: inline-block;
+	padding: 0 0.5em;
+	background: rgba(206, 205, 202, 0.5);
+	border-radius: 3px;
+	margin-right: 0.5em;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+	white-space: nowrap;
+}
+
+.collection-title {
+	display: inline-block;
+	margin-right: 1em;
+}
+
+.page-description {
+	margin-bottom: 2em;
+}
+
+.simple-table {
+	margin-top: 1em;
+	font-size: 0.875rem;
+	empty-cells: show;
+}
+.simple-table td {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table th {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table-header-color {
+	background: rgb(247, 246, 243);
+	color: black;
+}
+.simple-table-header {
+	font-weight: 500;
+}
+
+time {
+	opacity: 0.5;
+}
+
+.icon {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	max-width: 1.2em;
+	max-height: 1.2em;
+	text-decoration: none;
+	vertical-align: text-bottom;
+	margin-right: 0.5em;
+}
+
+/*
+ * Render emoji icons using a ::before pseudo-element to keep the glyph
+ * out of the DOM textContent traversal. This avoids double-rendering icons
+ * in callouts and page titles.
+ * NOTE(slim/html-export-pseudo-icons): I can't tagref this because it will
+ * flag as a duplicate tag after codegen.
+ */
+.icon[data-emoji]::before {
+	content: attr(data-emoji);
+}
+
+img.icon {
+	border-radius: 3px;
+}
+
+.callout img.notion-static-icon {
+	width: 1em;
+	height: 1em;
+}
+
+.callout p {
+	margin: 0;
+}
+
+.callout h1,
+.callout h2,
+.callout h3 {
+	margin: 0 0 0.6rem;
+}
+
+.user-icon {
+	width: 1.5em;
+	height: 1.5em;
+	border-radius: 100%;
+	margin-right: 0.5rem;
+}
+
+.user-icon-inner {
+	font-size: 0.8em;
+}
+
+.text-icon {
+	border: 1px solid #000;
+	text-align: center;
+}
+
+.page-cover-image {
+	display: block;
+	object-fit: cover;
+	width: 100%;
+	max-height: 30vh;
+}
+
+.page-header-icon {
+	font-size: 3rem;
+	margin-bottom: 1rem;
+}
+
+.page-header-icon-with-cover {
+	margin-top: -0.72em;
+	margin-left: 0.07em;
+}
+
+.page-header-icon img {
+	border-radius: 3px;
+}
+
+.link-to-page {
+	margin: 1em 0;
+	padding: 0;
+	border: none;
+	font-weight: 500;
+}
+
+p > .user {
+	opacity: 0.5;
+}
+
+td > .user,
+td > time {
+	white-space: nowrap;
+}
+
+input[type="checkbox"] {
+	margin-right: 0.4em;
+	vertical-align: middle;
+}
+
+p {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.image {
+	border: none;
+	margin: 1.5em 0;
+	padding: 0;
+	border-radius: 0;
+	text-align: center;
+}
+
+.code,
+code {
+	background: rgba(135, 131, 120, 0.15);
+	border-radius: 3px;
+	padding: 0.2em 0.4em;
+	border-radius: 3px;
+	font-size: 85%;
+	tab-size: 2;
+}
+
+code {
+	color: #eb5757;
+}
+
+.code {
+	padding: 1.5em 1em;
+}
+
+.code-wrap {
+	white-space: pre-wrap;
+	word-break: break-all;
+}
+
+.code > code {
+	background: none;
+	padding: 0;
+	font-size: 100%;
+	color: inherit;
+}
+
+blockquote {
+	font-size: 1em;
+	margin: 1em 0;
+	padding-left: 1em;
+	border-left: 3px solid rgb(55, 53, 47);
+}
+
+blockquote.quote-large {
+	font-size: 1.25em;
+}
+
+.bookmark {
+	text-decoration: none;
+	max-height: 8em;
+	padding: 0;
+	display: flex;
+	width: 100%;
+	align-items: stretch;
+}
+
+.bookmark-title {
+	font-size: 0.85em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	height: 1.75em;
+	white-space: nowrap;
+}
+
+.bookmark-text {
+	display: flex;
+	flex-direction: column;
+}
+
+.bookmark-info {
+	flex: 4 1 180px;
+	padding: 12px 14px 14px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.bookmark-image {
+	width: 33%;
+	flex: 1 1 180px;
+	display: block;
+	position: relative;
+	object-fit: cover;
+	border-radius: 1px;
+}
+
+.bookmark-description {
+	color: rgba(55, 53, 47, 0.6);
+	font-size: 0.75em;
+	overflow: hidden;
+	max-height: 4.5em;
+	word-break: break-word;
+}
+
+.bookmark-href {
+	font-size: 0.75em;
+	margin-top: 0.25em;
+}
+
+.tab {
+	margin: 1.25em 0;
+	padding-inline: 1rem;
+	border: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+.sans { font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", "Noto Sans Arabic", "Noto Sans Hebrew", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
+.code { font-family: "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace; }
+.serif { font-family: Lyon-Text, Georgia, ui-serif, serif; }
+.mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
+.pdf .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", "Noto Sans Arabic", "Noto Sans Hebrew", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK JP'; }
+.pdf:lang(zh-CN) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", "Noto Sans Arabic", "Noto Sans Hebrew", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC'; }
+.pdf:lang(zh-TW) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", "Noto Sans Arabic", "Noto Sans Hebrew", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK TC'; }
+.pdf:lang(ko-KR) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", "Noto Sans Arabic", "Noto Sans Hebrew", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK KR'; }
+.pdf .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK JP'; }
+.pdf:lang(zh-CN) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK SC'; }
+.pdf:lang(zh-TW) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK TC'; }
+.pdf:lang(ko-KR) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK KR'; }
+.pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.highlight-default {
+	color: rgba(44, 44, 43, 1);
+}
+.highlight-gray {
+	color: rgba(125, 122, 117, 1);
+	fill: rgba(125, 122, 117, 1);
+}
+.highlight-brown {
+	color: rgba(159, 118, 90, 1);
+	fill: rgba(159, 118, 90, 1);
+}
+.highlight-orange {
+	color: rgba(210, 123, 45, 1);
+	fill: rgba(210, 123, 45, 1);
+}
+.highlight-yellow {
+	color: rgba(203, 148, 52, 1);
+	fill: rgba(203, 148, 52, 1);
+}
+.highlight-teal {
+	color: rgba(80, 148, 110, 1);
+	fill: rgba(80, 148, 110, 1);
+}
+.highlight-blue {
+	color: rgba(56, 125, 201, 1);
+	fill: rgba(56, 125, 201, 1);
+}
+.highlight-purple {
+	color: rgba(154, 107, 180, 1);
+	fill: rgba(154, 107, 180, 1);
+}
+.highlight-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.highlight-red {
+	color: rgba(207, 81, 72, 1);
+	fill: rgba(207, 81, 72, 1);
+}
+.highlight-default_background {
+	color: rgba(44, 44, 43, 1);
+}
+.highlight-gray_background {
+	background: rgba(42, 28, 0, 0.07);
+}
+.highlight-brown_background {
+	background: rgba(139, 46, 0, 0.086);
+}
+.highlight-orange_background {
+	background: rgba(224, 101, 1, 0.129);
+}
+.highlight-yellow_background {
+	background: rgba(211, 168, 0, 0.137);
+}
+.highlight-teal_background {
+	background: rgba(0, 100, 45, 0.09);
+}
+.highlight-blue_background {
+	background: rgba(0, 124, 215, 0.094);
+}
+.highlight-purple_background {
+	background: rgba(102, 0, 178, 0.078);
+}
+.highlight-pink_background {
+	background: rgba(197, 0, 93, 0.086);
+}
+.highlight-red_background {
+	background: rgba(223, 22, 0, 0.094);
+}
+.block-color-default {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray {
+	color: rgba(125, 122, 117, 1);
+	fill: rgba(125, 122, 117, 1);
+}
+.block-color-brown {
+	color: rgba(159, 118, 90, 1);
+	fill: rgba(159, 118, 90, 1);
+}
+.block-color-orange {
+	color: rgba(210, 123, 45, 1);
+	fill: rgba(210, 123, 45, 1);
+}
+.block-color-yellow {
+	color: rgba(203, 148, 52, 1);
+	fill: rgba(203, 148, 52, 1);
+}
+.block-color-teal {
+	color: rgba(80, 148, 110, 1);
+	fill: rgba(80, 148, 110, 1);
+}
+.block-color-blue {
+	color: rgba(56, 125, 201, 1);
+	fill: rgba(56, 125, 201, 1);
+}
+.block-color-purple {
+	color: rgba(154, 107, 180, 1);
+	fill: rgba(154, 107, 180, 1);
+}
+.block-color-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.block-color-red {
+	color: rgba(207, 81, 72, 1);
+	fill: rgba(207, 81, 72, 1);
+}
+.block-color-default_background {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray_background {
+	background: rgba(240, 239, 237, 1);
+}
+.block-color-brown_background {
+	background: rgba(245, 237, 233, 1);
+}
+.block-color-orange_background {
+	background: rgba(251, 235, 222, 1);
+}
+.block-color-yellow_background {
+	background: rgba(249, 243, 220, 1);
+}
+.block-color-teal_background {
+	background: rgba(232, 241, 236, 1);
+}
+.block-color-blue_background {
+	background: rgba(229, 242, 252, 1);
+}
+.block-color-purple_background {
+	background: rgba(243, 235, 249, 1);
+}
+.block-color-pink_background {
+	background: rgba(250, 233, 241, 1);
+}
+.block-color-red_background {
+	background: rgba(252, 233, 231, 1);
+}
+.select-value-color-default { background-color: rgba(42, 28, 0, 0.07); }
+.select-value-color-gray { background-color: rgba(28, 19, 1, 0.11); }
+.select-value-color-brown { background-color: rgba(127, 51, 0, 0.156); }
+.select-value-color-orange { background-color: rgba(196, 88, 0, 0.203); }
+.select-value-color-yellow { background-color: rgba(209, 156, 0, 0.282); }
+.select-value-color-green { background-color: rgba(0, 96, 38, 0.156); }
+.select-value-color-blue { background-color: rgba(0, 118, 217, 0.203); }
+.select-value-color-purple { background-color: rgba(92, 0, 163, 0.141); }
+.select-value-color-pink { background-color: rgba(183, 0, 78, 0.152); }
+.select-value-color-red { background-color: rgba(206, 24, 0, 0.164); }
+
+.checkbox {
+	display: inline-flex;
+	vertical-align: text-bottom;
+	width: 16;
+	height: 16;
+	background-size: 16px;
+	margin-left: 2px;
+	margin-right: 5px;
+}
+
+.checkbox-on {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+
+.checkbox-off {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+	
+</style><style>@import url('https://cdn.jsdelivr.net/npm/katex@0.16.25/dist/katex-swap.min.css')</style></head><body><article id="3a94510f-2213-8090-a588-d12e02d7788c" class="page sans"><header><h1 class="page-title" dir="auto">Jaxcom V4 Logo Refresh</h1><p class="page-description" dir="auto"></p></header><div class="page-body"><h1 id="a142c131-a576-4a0f-9764-c2b21957851c" class="" dir="auto">Note</h1><p id="6d9385d6-167d-4e8f-bca2-a6d6e7508e74" class="" dir="auto">This V4 logo is a <strong>concept in progress</strong>—a direction we’re validating before final production artwork. It will continue to evolve through refinement, testing at real sizes, and export/implementation checks.</p><h1 id="b65b1300-4977-414b-b728-fb47996b0026" class="" dir="auto">Overview</h1><p id="662dc80a-c7a2-4da0-8389-450b5d0dbcfe" class="" dir="auto">This document captures the thinking behind the <strong>Jaxcom V4 logo refresh concept</strong>—from the real-world issues observed in V3 to the design decisions guiding a proposed new construction. This is a <em>work-in-progress concept</em>, intended to validate form, balance, and scalability before final production artwork.</p><p id="e97dcbeb-9662-479f-9aaf-efc623a5cf32" class="" dir="auto">The goal is a mark that feels familiar at first glance, but performs better everywhere it needs to live: mobile headers, favicons, social avatars, ads, and print.</p><p id="48f676c9-9bec-4a69-b1a2-4f9e8dd95c07" class="" dir="auto">At a high level, V4 focuses on three things:</p><ul id="5e86e233-f71b-487b-8d7b-c40feb928211" class="bulleted-list" dir="auto"><li style="list-style-type:disc"><strong>Clarity at small sizes</strong> (reducing micro-tension and noisy counters)</li></ul><ul id="7d54b84a-70ad-48c3-a70e-bbba82336f20" class="bulleted-list" dir="auto"><li style="list-style-type:disc"><strong>More consistent rhythm</strong> (spacing, weight distribution, and optical balance)</li></ul><ul id="216e2884-bbe8-4df6-aab9-2105953605a0" class="bulleted-list" dir="auto"><li style="list-style-type:disc"><strong>A simplified, repeatable arc</strong> that’s easier to reproduce accurately</li></ul><h1 id="3a94510f-2213-808f-8516-d948e201d34e" class="" dir="auto">History</h1><figure id="3a94510f-2213-80b2-947e-c7195f62ebec" class="image" style="text-align:left" data-notion-image="DAC3D57F-7518-4570-B6FA-B481867E1B33.png" dir="ltr"><a href="DAC3D57F-7518-4570-B6FA-B481867E1B33.png"><img style="width:596.96875px" src="DAC3D57F-7518-4570-B6FA-B481867E1B33.png"/></a></figure><p id="3a94510f-2213-80fa-9811-fcb79b841cd8" class="" dir="auto">The current Jaxcom logo (V3) has gone through the following key versions over the last few years:</p><ul id="3a94510f-2213-80f0-89ac-d4dc44576eb3" class="bulleted-list" dir="auto"><li style="list-style-type:disc">Major fixes around construction irregularities</li></ul><ul id="3a94510f-2213-8028-99f6-c833969c0f79" class="bulleted-list" dir="auto"><li style="list-style-type:disc">V2 — the first major brand refresh, adopting new colors</li></ul><ul id="3a94510f-2213-8083-9c09-cd1fce3ca6ec" class="bulleted-list" dir="auto"><li style="list-style-type:disc">V3 — a refinement of V2 with a more scalable color palette</li></ul><h1 id="3a94510f-2213-80f5-a3b0-f349cebc8702" class="" dir="auto">V3 Critique</h1><p id="3a94510f-2213-8055-8f41-d9551c4e903a" class="" dir="auto">The original form of the logo has served us well over the years. But as we mature, there are refinements we can adopt to take it to the next level. Before we dive into updates, let’s address a few core areas for improvement.</p><p id="3a94510f-2213-803f-baec-cfae4850de66" class="" dir="auto">On small screens the logo has a lot of tense areas. Especially around the ‘x’.</p><figure id="3a94510f-2213-808e-8055-c4a100063801" class="image" style="text-align:left" data-notion-image="7B9D12B7-2DC6-412C-A62C-B1902FD0C9E8.png" dir="ltr"><a href="7B9D12B7-2DC6-412C-A62C-B1902FD0C9E8.png"><img style="width:560.984375px" src="7B9D12B7-2DC6-412C-A62C-B1902FD0C9E8.png"/></a></figure><p id="3a94510f-2213-80ad-9838-d08d4ce6412e" class="" dir="auto">The gaps feel uneven and create visual tension across the logo.</p><figure id="3a94510f-2213-8065-9e48-f19a798c46a2" class="image" data-notion-image="B1ADF378-E770-40D8-AF95-1B95BB558369.png" dir="ltr"><a href="B1ADF378-E770-40D8-AF95-1B95BB558369.png"><img style="width:703.96875px" src="B1ADF378-E770-40D8-AF95-1B95BB558369.png"/></a></figure><p id="3a94510f-2213-805c-ae05-f1fa34f85d66" class="" dir="auto">These uneven gaps introduce visual noise and reduce clarity at small sizes.</p><h2 id="3a94510f-2213-80f3-a5e3-df5d5de2ac06" class="" dir="auto">The X Factor</h2><p id="3a94510f-2213-8040-b991-e714fcc64ffd" class="" dir="auto">The X is a great branding element that can be used for icons and emblems but the current form falls short visually when utilized in a 1:1 form factor as it looks unbalanced.</p><figure id="3a94510f-2213-80fd-81bc-eca091c2899b" class="image" data-notion-image="6AE8FD1F-FE37-46AC-813F-87ADFEB4BA0D.png" dir="ltr"><a href="6AE8FD1F-FE37-46AC-813F-87ADFEB4BA0D.png"><img style="width:704px" src="6AE8FD1F-FE37-46AC-813F-87ADFEB4BA0D.png"/></a></figure><h2 id="3a94510f-2213-8055-a2aa-f1021b0abc11" class="" dir="auto">The Arc</h2><figure id="3a94510f-2213-8074-a27b-f9946034f09e" class="image" data-notion-image="94BC4773-34CD-4804-BCD5-229A7987B765.png" dir="ltr"><a href="94BC4773-34CD-4804-BCD5-229A7987B765.png"><img style="width:703.96875px" src="94BC4773-34CD-4804-BCD5-229A7987B765.png"/></a></figure><p id="3a94510f-2213-80a2-8e64-d19fb3b1781c" class="" dir="auto">The construction of the V3 arc has too many anchor points, resulting in an overly complex form.</p><h1 id="3a94510f-2213-80db-8bd1-ef6ee48eb2b8" class="" dir="auto">The Goal &amp; Challenges</h1><p id="3a94510f-2213-8090-9144-c2ac3eb7a1e8" class="" dir="auto">Our goal is to resolve the current issues with an identity that feels new, but unmistakably Jaxcom.</p><p id="f110d2b8-66ec-4913-b0ef-5d9508b9608c" class="" dir="auto">Success looks like:</p><ul id="ebba7638-18bc-4751-bf55-02d601328743" class="bulleted-list" dir="auto"><li style="list-style-type:disc">Cleaner forms at small sizes (mobile, favicon, social)</li></ul><ul id="4e67fe6a-c327-42ef-99bb-18545701a426" class="bulleted-list" dir="auto"><li style="list-style-type:disc">More consistent spacing and rhythm across letterforms</li></ul><ul id="16c3d331-9c23-466e-9c71-95315388d6db" class="bulleted-list" dir="auto"><li style="list-style-type:disc">A simplified arc construction that’s easier to reproduce consistently</li></ul><ul id="c8a993f6-243c-4aec-8d3c-9cf6bd8e6757" class="bulleted-list" dir="auto"><li style="list-style-type:disc">An “X” that can stand alone as a balanced icon</li></ul><h2 id="024e6a10-b5ed-4117-8bd3-82c33735824a" class="" dir="auto">Project framing</h2><p id="98557897-6098-49f1-9fef-052b17cc9c41" class="" dir="auto">This refresh is an exercise in <em>optimization</em>, not reinvention. The intent is to preserve the equities that already work—recognition, attitude, and the distinctive “Jaxcom” silhouette—while removing the friction points that show up in real-world use (small sizes, low-resolution contexts, and quick-glance situations).</p><h3 id="d2ceb141-efa8-4f95-8712-e423f553f3fd" class="" dir="auto">Primary objectives</h3><ul id="be3b8a73-c646-4da5-8f3d-5dee1fe60445" class="bulleted-list" dir="auto"><li style="list-style-type:disc"><strong>Legibility &amp; reduction:</strong> fewer fussy interior tensions; calmer negative space</li></ul><ul id="8f604048-610f-4e2d-9b86-ebecc6290458" class="bulleted-list" dir="auto"><li style="list-style-type:disc"><strong>Consistency:</strong> more even rhythm across letterforms and spacing</li></ul><ul id="c057226e-250e-4c28-bd95-ef3ff4c6dfb9" class="bulleted-list" dir="auto"><li style="list-style-type:disc"><strong>Versatility:</strong> a standalone “X” mark that holds in a square canvas</li></ul><ul id="87a78549-1b57-47eb-8f5f-023454969542" class="bulleted-list" dir="auto"><li style="list-style-type:disc"><strong>Reproducibility:</strong> geometry that’s easy to rebuild and hard to accidentally distort</li></ul><h3 id="7a7723c7-3625-4c0f-b8bb-f0fbfdc329e9" class="" dir="auto">Key constraints</h3><ul id="c995c160-ca7f-46e9-94cd-24efec2a6ce7" class="bulleted-list" dir="auto"><li style="list-style-type:disc">Must remain instantly recognizable as Jaxcom (no “new brand” shock)</li></ul><ul id="f6bb48d0-e53f-444e-998a-562ac60f0916" class="bulleted-list" dir="auto"><li style="list-style-type:disc">Must scale cleanly from favicon to signage</li></ul><ul id="1fdcc315-f0a7-47f3-8e07-284d7994b088" class="bulleted-list" dir="auto"><li style="list-style-type:disc">Must work in single color as confidently as it does in the full palette</li></ul><h2 id="9d78304a-31e3-4f70-9749-bf3c3c3ad909" class="" dir="auto">What wasn’t working in V3 (in practice)</h2><p id="6ea0f401-bd6c-4368-a78a-3b75efb68103" class="" dir="auto">From a distance, V3 reads strong. The issues show up as you push it into modern environments:</p><ul id="2ff27a3e-102f-410d-a3db-55f1f81b66d6" class="bulleted-list" dir="auto"><li style="list-style-type:disc"><strong>Micro-tension around the “x”:</strong> tight interior corners and uneven counters start to clump at small sizes</li></ul><ul id="b3dbe4b9-1007-4b9c-b994-6833724744ab" class="bulleted-list" dir="auto"><li style="list-style-type:disc"><strong>Inconsistent spacing:</strong> the cadence between letters doesn’t feel evenly tuned, which makes the wordmark feel less deliberate</li></ul><ul id="dc14924e-2717-4f7a-8bae-6e6f2de0765e" class="bulleted-list" dir="auto"><li style="list-style-type:disc"><strong>Overbuilt arc:</strong> too many anchor points create a form that’s harder to keep consistent across files, exports, and iterations</li></ul><h1 id="3a94510f-2213-803d-91fe-f6a161ede6e2" class="" dir="auto">Introducing V4 (Concept)</h1><figure id="3a94510f-2213-8064-9ddc-e1ab08ffbe60" class="image" data-notion-image="CC100A17-AC20-4F2B-ACC4-401F2E6EA1C1.png" dir="ltr"><a href="CC100A17-AC20-4F2B-ACC4-401F2E6EA1C1.png"><img style="width:703.984375px" src="CC100A17-AC20-4F2B-ACC4-401F2E6EA1C1.png"/></a></figure><p id="3a94510f-2213-804a-971c-fbd716920eda" class="" dir="auto">The V4 logo introduces a new arc. It eliminates the tense gaps around the “x”, and spacing around the “c” is now more uniform. The arc is more defined, more curved, and rises slightly higher than before. It symbolizes momentum—a wave—and a shield.</p><p id="3a94510f-2213-8009-8f90-f6a6f55b1e40" class="" dir="auto">The “J” extends slightly higher to improve optical balance and better distribute weight across the wordmark.</p><h2 id="703a8919-5258-4c06-b08b-8a38942f92d5" class="" dir="auto">Design approach (how V4 was built)</h2><p id="8be7291b-8774-47cc-ae79-78447e305a8f" class="" dir="auto">V4 focuses on <em>optical geometry</em>—not perfect math for its own sake, but a construction that produces consistent visual results:</p><ul id="072bdc56-6dcd-40af-91d8-a494058ea562" class="bulleted-list" dir="auto"><li style="list-style-type:disc"><strong>Simplified arc construction:</strong> fewer points, cleaner curves, and a repeatable build logic</li></ul><ul id="43a18006-7357-4f2c-b105-7fa32f521cec" class="bulleted-list" dir="auto"><li style="list-style-type:disc"><strong>Optical spacing adjustments:</strong> whitespace tuned to <em>look</em> even (especially around the “x” and “c”), not just measure evenly</li></ul><ul id="5b2b55e8-46b1-4095-ab55-ebd6be43a660" class="bulleted-list" dir="auto"><li style="list-style-type:disc"><strong>Improved stress points:</strong> smoother transitions where forms converge, reducing “pinching” in small renders</li></ul><h2 id="825fc8ea-0ef7-4a8e-aa3f-fedf4f6fbac8" class="" dir="auto">Why the new arc matters</h2><p id="67775a8e-db08-4794-8221-4a5c8b8a7718" class="" dir="auto">The arc is the signature gesture in the mark. In V4 it’s designed to be:</p><ul id="8184d767-f3b0-48a0-8831-595cb4a04dc6" class="bulleted-list" dir="auto"><li style="list-style-type:disc"><strong>More intentional:</strong> a clearer silhouette that reads quickly</li></ul><ul id="760ae26e-89ca-4079-b5dd-e052fa9923fa" class="bulleted-list" dir="auto"><li style="list-style-type:disc"><strong>More energetic:</strong> a slightly higher rise that communicates momentum</li></ul><ul id="c8e55d3f-f4c0-47e2-8c41-3e4744a3aa88" class="bulleted-list" dir="auto"><li style="list-style-type:disc"><strong>More symbolic:</strong> a dual read as wave + shield (progress + protection)</li></ul><h2 id="3a94510f-2213-8023-8d84-e00d07397510" class="" dir="auto">The New X Factor</h2><figure id="3a94510f-2213-80d0-a08d-cc1323f0e88c" class="image" data-notion-image="EC07A41A-FFDA-491D-A2D9-E2AB5EBD03D0.png" dir="ltr"><a href="EC07A41A-FFDA-491D-A2D9-E2AB5EBD03D0.png"><img style="width:703.984375px" src="EC07A41A-FFDA-491D-A2D9-E2AB5EBD03D0.png"/></a></figure><p id="3a94510f-2213-8076-82bd-f439fd778dd3" class="" dir="auto">No tense areas. Visually balanced. Perfect for small form factors like favicons.</p><p id="3a94510f-2213-803e-8a80-c352968c8a0e" class="" dir="auto">By collapsing three interior splits into two, the “X” becomes <strong>less busy</strong>, the negative space becomes <strong>more stable</strong>, and the icon holds up better in <strong>favicons, app icons, and social avatars</strong>.</p><h3 id="5630025d-3d3b-4676-97ce-f7e2c365b67b" class="" dir="auto">Icon performance (1:1)</h3><p id="3a921dd1-8ab7-4cd2-816a-48355c060d6d" class="" dir="auto">The updated “X” is designed to survive the harshest test: a square canvas at tiny sizes. The goal is a mark that retains:</p><ul id="ea86cd2b-b9eb-4fe2-b533-c37b730f2242" class="bulleted-list" dir="auto"><li style="list-style-type:disc">Clear interior negative space</li></ul><ul id="04f8953b-50a3-4029-ac6a-fa763cb2b0ec" class="bulleted-list" dir="auto"><li style="list-style-type:disc">Symmetry that feels stable (not top-heavy or lopsided)</li></ul><ul id="2664a746-c644-459e-a456-f45d728ecc9c" class="bulleted-list" dir="auto"><li style="list-style-type:disc">A silhouette that remains identifiable even when anti-aliasing gets aggressive</li></ul><h2 id="3a94510f-2213-8027-b8f7-c7bfacde3e39" class="" dir="auto">The New Arc</h2><p id="3a94510f-2213-8099-a0d4-f67e164a9455" class="" dir="auto">
+</p><figure id="3a94510f-2213-8081-96a3-fc8b85a7415c" class="image" style="text-align:left" data-notion-image="8F975B7A-4C48-494F-86B8-E473132D0A36.png" dir="ltr"><a href="8F975B7A-4C48-494F-86B8-E473132D0A36.png"><img style="width:336px" src="8F975B7A-4C48-494F-86B8-E473132D0A36.png"/></a><figcaption>V4 Arc Construction</figcaption></figure><p id="3a94510f-2213-802f-90e8-ca54949ec36a" class="" dir="auto">The new Jaxcom arc has a clean geometric construction. Built with 2 circles and visually refined.</p><h2 id="29e4fd16-89d9-4d18-bc10-52c325eb677f" class="" dir="auto">Deliverables &amp; usage notes (draft)</h2><ul id="6c3c49c1-acdb-416c-8004-1a0e0bab9c19" class="bulleted-list" dir="auto"><li style="list-style-type:disc"><strong>Primary lockup:</strong> Jaxcom wordmark (full)</li></ul><ul id="aafb74d3-5af4-4f18-a767-a4607b38bd46" class="bulleted-list" dir="auto"><li style="list-style-type:disc"><strong>Secondary mark:</strong> standalone “X” for avatar/favicons/app icons</li></ul><ul id="0f152ad1-0284-41a5-8ed5-85b7c8041109" class="bulleted-list" dir="auto"><li style="list-style-type:disc"><strong>Recommended minimum sizes:</strong> validate at 16px, 24px, 32px, 48px before finalizing</li></ul><ul id="27b9547e-6652-42b5-a371-082ce62c589c" class="bulleted-list" dir="auto"><li style="list-style-type:disc"><strong>Color &amp; mono:</strong> confirm strong read in 1-color and reversed-out applications</li></ul><h2 id="e0734539-3651-4a2b-bab9-3f18bc197fd0" class="" dir="auto">Next steps</h2><ul id="8ae0ac51-ad30-490d-a446-2e5e10cb8a2f" class="bulleted-list" dir="auto"><li style="list-style-type:disc">Export V4 as clean vector master (SVG/PDF) and a production-ready icon set</li></ul><ul id="02d7756b-2310-4aeb-acf9-d5d08e9bdc20" class="bulleted-list" dir="auto"><li style="list-style-type:disc">Test in real placements: website header, mobile nav, favicon, social avatar, and ad thumbnails</li></ul><ul id="020d0c0b-0394-485a-ac33-25e18af8aeac" class="bulleted-list" dir="auto"><li style="list-style-type:disc">Final pass: spacing micro-adjustments + curve smoothing based on those render tests</li></ul><p id="3a94510f-2213-80f7-94f7-de56b2867e68" class="" dir="auto">
+</p><figure id="3a94510f-2213-801d-b9be-de49d5b7f2bb" class="image" data-notion-image="0D445229-C2D0-41AC-870B-19AEE7E1249B.png" dir="ltr"><a href="0D445229-C2D0-41AC-870B-19AEE7E1249B.png"><img style="width:703.953125px" src="0D445229-C2D0-41AC-870B-19AEE7E1249B.png"/></a></figure></div></article><span class="sans" style="font-size:14px;padding-top:2em"></span></body></html>
